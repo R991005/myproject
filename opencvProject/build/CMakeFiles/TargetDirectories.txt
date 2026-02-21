@@ -1,0 +1,3 @@
+C:/Users/bigre/git/opencvProject/build/CMakeFiles/app.dir
+C:/Users/bigre/git/opencvProject/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/bigre/git/opencvProject/build/CMakeFiles/ZERO_CHECK.dir
