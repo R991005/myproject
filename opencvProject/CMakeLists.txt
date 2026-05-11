@@ -9,7 +9,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(OpenCV REQUIRED)
 
 add_executable(app
-    src/TestMain.cpp
+    src/main.cpp
+    src/image_processing.cpp
+    src/display_utils.cpp
 )
 
 # include を通す（OpenCV_INCLUDE_DIRS が入る）

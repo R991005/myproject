@@ -368,7 +368,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\bigre\git\opencvProject\src\TestMain.cpp" />
+    <ClCompile Include="C:\Users\bigre\git\opencvProject\src\main.cpp" />
+    <ClCompile Include="C:\Users\bigre\git\opencvProject\src\image_processing.cpp" />
+    <ClCompile Include="C:\Users\bigre\git\opencvProject\src\display_utils.cpp" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

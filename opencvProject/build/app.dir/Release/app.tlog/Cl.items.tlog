@@ -1,1 +1,3 @@
-C:\Users\bigre\git\opencvProject\src\TestMain.cpp;C:\Users\bigre\git\opencvProject\build\app.dir\Release\TestMain.obj
+C:\Users\bigre\git\opencvProject\src\main.cpp;C:\Users\bigre\git\opencvProject\build\app.dir\Release\main.obj
+C:\Users\bigre\git\opencvProject\src\image_processing.cpp;C:\Users\bigre\git\opencvProject\build\app.dir\Release\image_processing.obj
+C:\Users\bigre\git\opencvProject\src\display_utils.cpp;C:\Users\bigre\git\opencvProject\build\app.dir\Release\display_utils.obj
