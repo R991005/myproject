@@ -7,15 +7,11 @@
 namespace {
 
 constexpr int BLUR_KERNEL_SIZE = 21;
-
 constexpr double CANNY_THRESHOLD_1 = 80.0;
 constexpr double CANNY_THRESHOLD_2 = 200.0;
-
 constexpr float USM_MULTIPLIER = 3.0F;
-
 // 個別表示画像の倍率
 constexpr double DISPLAY_SCALE = 0.3;
-
 // 比較画像を作成時の画像倍率
 constexpr double COMPARISON_WINDOW_SCALE = 0.4;
 
@@ -39,7 +35,7 @@ void PrintProcessingTimes(
 
 int main()
 {
-    const std::string fileSrc = "./rail.jpeg";
+    const std::string fileSrc = "./plant.jpeg";
 
     std::cout << "Kernel Size: " << BLUR_KERNEL_SIZE << '\n';
 
