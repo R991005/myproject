@@ -23,4 +23,7 @@ void ResizeForDisplay( cv::Mat& image, double scale );
 
 void ResizeAllImages( ProcessingResult& result, double scale );
 
-void DisplayResults( const ProcessingResult& result, double comparisonScale );
+bool DisplayAndSaveResults(
+    const ProcessingResult& result,
+    double comparisonScale,
+    const std::string& outputPath );

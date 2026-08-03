@@ -94,7 +94,10 @@ void ResizeAllImages( ProcessingResult& result, double scale )
     ResizeForDisplay( result.equalizedHist, scale );
 }
 
-void DisplayResults( const ProcessingResult& result, double comparisonScale )
+bool DisplayAndSaveResults(
+    const ProcessingResult& result,
+    double comparisonScale,
+    const std::string& outputPath )
 {
     DisplayImage( "src", result.src) ;
     DisplayImage( "gray", result.gray );
@@ -110,4 +113,6 @@ void DisplayResults( const ProcessingResult& result, double comparisonScale )
                                                             result.outline, result.sobelGx, result.sobelGy, comparisonScale);
 
     DisplayImage( "comparison_window", comparisonWindow );
+
+    return cv::imwrite(outputPath, comparisonWindow);
 }

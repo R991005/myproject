@@ -31,7 +31,11 @@ The processed results are displayed individually and combined into a single comp
 
 ### Comparison Image
 
+The following image is generated automatically as `comparison.png` when the application runs.
+
 ![Comparison of image processing results](comparison.png)
+
+[Open the comparison image at full size](comparison.png)
 
 ## Discussion of Image Processing Filters
 

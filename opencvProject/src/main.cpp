@@ -14,6 +14,7 @@ constexpr float USM_MULTIPLIER = 3.0F;
 constexpr double DISPLAY_SCALE = 0.3;
 // 比較画像を作成時の画像倍率
 constexpr double COMPARISON_WINDOW_SCALE = 0.4;
+const std::string COMPARISON_OUTPUT_PATH = "./comparison.png";
 
 void PrintProcessingTimes(
     const ProcessingTimes& times)
@@ -54,7 +55,21 @@ int main()
 
     ResizeAllImages( result, DISPLAY_SCALE );
 
-    DisplayResults( result, COMPARISON_WINDOW_SCALE );
+    const bool comparisonSaved = DisplayAndSaveResults(
+        result,
+        COMPARISON_WINDOW_SCALE,
+        COMPARISON_OUTPUT_PATH );
+
+    if (comparisonSaved)
+    {
+        std::cout << "Comparison image saved: "
+                  << COMPARISON_OUTPUT_PATH << '\n';
+    }
+    else
+    {
+        std::cerr << "Failed to save comparison image: "
+                  << COMPARISON_OUTPUT_PATH << '\n';
+    }
 
     cv::waitKey(0);
     cv::destroyAllWindows();
